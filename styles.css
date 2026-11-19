@@ -267,3 +267,19 @@ h3 { font-size: 1.2rem; letter-spacing: -.01em; font-weight: 700; }
   .projects, .stack-grid, .facts { grid-template-columns: 1fr; }
   .terminal pre { font-size: 12.5px; padding: 16px; }
 }
+
+/* Detalles de código (inspirados en la web anterior) */
+.hello { font: 500 1.05rem "JetBrains Mono", monospace; color: var(--text); margin-bottom: 14px; }
+.tag { color: var(--accent-2); }
+.brace { font-family: "JetBrains Mono", monospace; font-weight: 500; color: var(--accent); }
+.cursor { color: var(--accent); animation: blink 1s steps(1) infinite; margin-left: 2px; }
+
+/* TIMELINE */
+.timeline { list-style: none; position: relative; margin-top: 44px; display: grid; gap: 22px; padding-left: 30px; }
+.timeline::before { content: ""; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--accent), var(--accent-2)); border-radius: 2px; opacity: .6; }
+.timeline > li { position: relative; padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); display: grid; gap: 8px; }
+.timeline > li::before { content: ""; position: absolute; left: -29px; top: 28px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg-alt); border: 3px solid var(--accent); }
+.t-date { font: 500 13px "JetBrains Mono", monospace; color: var(--accent); }
+.t-place { color: var(--text); font-weight: 500; margin-top: -4px; }
+.timeline > li > p:not(.t-place) { color: var(--muted); }
+.timeline .chips { margin-top: 6px; }
