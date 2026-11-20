@@ -283,3 +283,11 @@ h3 { font-size: 1.2rem; letter-spacing: -.01em; font-weight: 700; }
 .t-place { color: var(--text); font-weight: 500; margin-top: -4px; }
 .timeline > li > p:not(.t-place) { color: var(--muted); }
 .timeline .chips { margin-top: 6px; }
+
+/* DESTACADOS DE LA PORTADA */
+.highlights { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; list-style: none; }
+.highlights li { padding: 8px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 14px; }
+.highlights strong { color: var(--text); font-weight: 600; }
+
+/* Timeline en secciones sin fondo alternativo */
+.section:not(.alt) .timeline > li::before { background: var(--bg); }
